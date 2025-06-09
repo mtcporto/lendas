@@ -42,7 +42,8 @@ export default function MythPage({ params }: MythPageProps) {
 
       <article className="bg-card p-6 sm:p-8 rounded-lg shadow-lg md:flex md:gap-8">
         <div className="w-full md:w-2/5 mb-8 md:mb-0">
-          <div className="relative aspect-video w-full rounded-lg overflow-hidden shadow-md">
+          {/* Alteração aqui: md:aspect-auto e md:h-full */}
+          <div className="relative aspect-video md:aspect-auto w-full md:h-full rounded-lg overflow-hidden shadow-md">
             <Image
               src={myth.image}
               alt={myth.name}
