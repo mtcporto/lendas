@@ -11,6 +11,13 @@ const multirioReference: Referencia = {
   url: "https://www.multirio.rj.gov.br/index.php/multiclube/9a11/diz-a-lenda"
 };
 
+const cascudoDicionarioReference: Referencia = {
+  titulo: "Dicionário do Folclore Brasileiro",
+  autor: "Luís da Câmara Cascudo",
+  editora: "Global Editora",
+  ano: 2012 // Usando uma edição de exemplo.
+};
+
 export const myths: Myth[] = [
   {
     id: '1',
@@ -25,7 +32,7 @@ export const myths: Myth[] = [
       influencias: ['Cultura africana (entidades travessas)', 'Cultura indígena (conhecimento da floresta)', 'Folclore europeu (seres mágicos)'],
     },
     simbolismo: ['Travessura', 'Imprevisibilidade', 'Espírito livre', 'Resistência cultural'],
-    referencias: [genericReference, multirioReference],
+    referencias: [genericReference, multirioReference, cascudoDicionarioReference],
     image: 'https://www.multirio.rj.gov.br/images/img_2017_10/SACI-int.jpg',
     imageAiHint: 'Saci Pererê',
   },
@@ -35,14 +42,14 @@ export const myths: Myth[] = [
     name: 'Curupira',
     tipo: 'Mito Indígena',
     regiao: 'Amazônia (presente em todo Brasil)',
-    description: 'O Curupira é o protetor das matas e dos animais. Possui cabelos vermelhos como fogo e pés virados para trás, que servem para confundir caçadores e lenhadores, fazendo-os seguir na direção errada. Ele pune severamente aqueles que desrespeitam a natureza, caçam por prazer ou derrubam árvores desnecessariamente.',
+    description: 'O Curupira é o protetor das matas e dos animais. Possui cabelos vermelhos como fogo e pés virados para trás, que servem para confundir caçadores e lenhadores, fazendo-os seguir nação errada. Ele pune severamente aqueles que desrespeitam a natureza, caçam por prazer ou derrubam árvores desnecessariamente.',
     origem: {
       periodo: 'Pré-colonial',
       contexto: 'Crenças indígenas ancestrais sobre a necessidade de proteger a floresta e seus habitantes.',
       influencias: ['Cosmovisão indígena', 'Espíritos guardiões da natureza'],
     },
     simbolismo: ['Proteção da naturez', 'Justiça ambiental', 'Mistério da florest', 'Consequências ganância'],
-    referencias: [genericReference, multirioReference],
+    referencias: [genericReference, multirioReference, cascudoDicionarioReference],
     image: 'https://www.multirio.rj.gov.br/images/img_2017_10/CURUPIRA-int.jpg',
     imageAiHint: 'Curupira forest',
   },
@@ -59,7 +66,7 @@ export const myths: Myth[] = [
       influencias: ['Mitologia indígena (Mãe d\'água)', 'Possível sincretismo com sereias europeias'],
     },
     simbolismo: ['Perigo dos rios', 'Sedução fatal', 'Beleza enganosa', 'Forças da água'],
-    referencias: [genericReference, multirioReference],
+    referencias: [genericReference, multirioReference, cascudoDicionarioReference],
     image: 'https://www.multirio.rj.gov.br/images/img_2017_10/IARA-int.jpg',
     imageAiHint: 'Iara mermaid',
   },
@@ -76,7 +83,7 @@ export const myths: Myth[] = [
       influencias: ['Crenças indígenas (fogo fátuo)', 'Relatos de jesuítas', 'Folclore europeu (serpentes de fogo)'],
     },
     simbolismo: ['Proteção incêndios', 'Punição divina', 'Guardião dos campos', 'Fenômeno mitificado'],
-    referencias: [genericReference, multirioReference],
+    referencias: [genericReference, multirioReference, cascudoDicionarioReference],
     image: 'https://www.multirio.rj.gov.br/images/img_2017_10/BOITATA-int.jpg',
     imageAiHint: 'Boitatá snake',
   },
@@ -93,7 +100,7 @@ export const myths: Myth[] = [
       influencias: ['Folclore ibérico (lobisomens, almas penadas)', 'Moralismo católico medieval'],
     },
     simbolismo: ['Punição por pecado', 'Repreensão desejos', 'Terror noturno', 'Controle social'],
-    referencias: [genericReference, multirioReference],
+    referencias: [genericReference, multirioReference, cascudoDicionarioReference],
     image: 'https://www.multirio.rj.gov.br/images/img_2017_10/MULA-SEM-CABECA-int.jpg',
     imageAiHint: 'Headless Mule',
   },
@@ -110,7 +117,7 @@ export const myths: Myth[] = [
       influencias: ['Cultura ribeirinha amazônica', 'Observação dos botos', 'Contos europeus de metamorfos'],
     },
     simbolismo: ['Sedução', 'Mistério dos rios', 'Transformação', 'Fertilidade', 'Encantamento'],
-    referencias: [genericReference, multirioReference],
+    referencias: [genericReference, multirioReference, cascudoDicionarioReference],
     image: 'https://www.multirio.rj.gov.br/images/img_2017_10/BOTO-int-002.jpg',
     imageAiHint: 'Pink Dolphin',
   },
@@ -127,7 +134,7 @@ export const myths: Myth[] = [
       influencias: ['Mitologia indígena Tupi-Guarani', 'Culto à lua (Jaci)'],
     },
     simbolismo: ['Amor impossível', 'Transformação natureza', 'Beleza trágica', 'Conexão céu-terra-água'],
-    referencias: [genericReference, multirioReference],
+    referencias: [genericReference, multirioReference, cascudoDicionarioReference],
     image: 'https://www.multirio.rj.gov.br/images/img_2017_10/VITORIA-REGIA-int.jpg',
     imageAiHint: 'Vitória Régia',
   },
@@ -144,7 +151,7 @@ export const myths: Myth[] = [
       influencias: ['Cosmovisão indígena (Tupi-Guarani)', 'Espíritos da floresta'],
     },
     simbolismo: ['Proteção da caça', 'Astúcia', 'Vínculo com animais', 'Equilíbrio ecológico'],
-    referencias: [genericReference, multirioReference],
+    referencias: [genericReference, multirioReference, cascudoDicionarioReference],
     image: 'https://placehold.co/600x400.png',
     imageAiHint: 'Caipora spirit',
   },
@@ -167,12 +174,7 @@ export const myths: Myth[] = [
       "Encontrar objetos perdidos"
     ],
     referencias: [
-      {
-        titulo: "Dicionário do Folclore Brasileiro",
-        autor: "Luís da Câmara Cascudo",
-        editora: "Global Editora",
-        ano: 2000
-      },
+      cascudoDicionarioReference, // Já tinha, mas garantindo a padronização
       multirioReference
     ],
     image: 'https://www.multirio.rj.gov.br/images/img_2017_10/NEGRINHO-int.jpg',
@@ -191,7 +193,7 @@ export const myths: Myth[] = [
       influencias: ['Folclore ibérico (Coca)', 'Lendas de monstros raptores de crianças', 'Literatura infantil brasileira']
     },
     simbolismo: ['Medo infantil', 'Autoridade', 'Personificação perigo', 'Castigo desobediência'],
-    referencias: [genericReference, multirioReference],
+    referencias: [genericReference, multirioReference, cascudoDicionarioReference],
     image: 'https://www.multirio.rj.gov.br/images/img_2017_10/CUCA-int.jpg',
     imageAiHint: 'Cuca witch'
   },
@@ -208,7 +210,7 @@ export const myths: Myth[] = [
       influencias: ['Folclore europeu medieval', 'Licantropia', 'Crenças em metamorfose']
     },
     simbolismo: ['Maldição', 'Natureza selvagem', 'Dualidade humana', 'Terror rural'],
-    referencias: [genericReference, multirioReference],
+    referencias: [genericReference, multirioReference, cascudoDicionarioReference],
     image: 'https://www.multirio.rj.gov.br/images/img_2017_10/LOBISOMEM-int.jpg',
     imageAiHint: 'Lobisomem werewolf'
   },
@@ -225,7 +227,7 @@ export const myths: Myth[] = [
       influencias: ['Folclore indígena amazônico']
     },
     simbolismo: ['Mistério da selva', 'Proteção natureza', 'Força bruta', 'Medo desconhecido'],
-    referencias: [genericReference, multirioReference],
+    referencias: [genericReference, multirioReference, cascudoDicionarioReference],
     image: 'https://www.multirio.rj.gov.br/images/img_2017_10/MAPINGUARI-int.jpg',
     imageAiHint: 'Mapinguari monster'
   },
@@ -242,7 +244,7 @@ export const myths: Myth[] = [
       influencias: ['Folclore indígena', 'Crenças europeias em bruxaria', 'Aves de mau agouro']
     },
     simbolismo: ['Agouro', 'Bruxaria', 'Transformação', 'Barganha sobrenatural'],
-    referencias: [genericReference, multirioReference],
+    referencias: [genericReference, multirioReference, cascudoDicionarioReference],
     image: 'https://www.multirio.rj.gov.br/images/img_2017_10/MATINTA-int.jpg',
     imageAiHint: 'Matinta Perera'
   },
@@ -259,7 +261,7 @@ export const myths: Myth[] = [
       influencias: ['Catolicismo popular', 'Lendas de almas penadas', 'Moralidade e punição']
     },
     simbolismo: ['Punição eterna', 'Mal que perdura', 'Assombração', 'Consequências vida ímpia'],
-    referencias: [genericReference, multirioReference],
+    referencias: [genericReference, multirioReference, cascudoDicionarioReference],
     image: 'https://www.multirio.rj.gov.br/images/img_2017_10/CORPO-SECO-int.jpg',
     imageAiHint: 'Corpo Seco'
   },
@@ -276,7 +278,7 @@ export const myths: Myth[] = [
       influencias: ['Folclore ribeirinho', 'Espíritos protetores da água', 'Lendas indígenas locais']
     },
     simbolismo: ['Proteção fluvial', 'Guardião do rio', 'Força da natureza', 'Respeito recursos'],
-    referencias: [genericReference, multirioReference],
+    referencias: [genericReference, multirioReference, cascudoDicionarioReference],
     image: 'https://www.multirio.rj.gov.br/images/img_2017_10/CABOCLO-DAGUA-int-002.jpg',
     imageAiHint: 'Caboclo Dagua'
   },
@@ -293,7 +295,7 @@ export const myths: Myth[] = [
       influencias: ['Mitologia indígena amazônica (Sucuri, Anaconda)', 'Relatos de grandes serpentes']
     },
     simbolismo: ['Poder primordial', 'Força natureza', 'Perigo oculto', 'Espírito ancestral'],
-    referencias: [genericReference, multirioReference],
+    referencias: [genericReference, multirioReference, cascudoDicionarioReference],
     image: 'https://www.multirio.rj.gov.br/images/img_2017_10/BOIUNA-int.jpg',
     imageAiHint: 'Boiuna snake'
   },
@@ -310,7 +312,7 @@ export const myths: Myth[] = [
       influencias: ['Cosmovisão Tupi-Guarani', 'Espíritos da natureza', 'Relação respeito caça']
     },
     simbolismo: ['Proteção animal', 'Equilíbrio da caça', 'Espírito da floresta', 'Justiça ecológica'],
-    referencias: [genericReference, multirioReference],
+    referencias: [genericReference, multirioReference, cascudoDicionarioReference],
     image: 'https://www.multirio.rj.gov.br/images/img_2017_10/ANHANGA-int.jpg',
     imageAiHint: 'Anhangá spirit'
   }
@@ -323,4 +325,3 @@ export function getMythBySlug(slug: string): Myth | undefined {
 export function getAllMyths(): Myth[] {
   return myths;
 }
-
