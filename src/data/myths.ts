@@ -6,6 +6,11 @@ const genericReference: Referencia = {
   url: "https://pt.wikipedia.org/wiki/Lendas_do_folclore_brasileiro"
 };
 
+const multirioReference: Referencia = {
+  titulo: "Diz a Lenda - Multirio",
+  url: "https://www.multirio.rj.gov.br/index.php/multiclube/9a11/diz-a-lenda"
+};
+
 export const myths: Myth[] = [
   {
     id: '1',
@@ -20,9 +25,9 @@ export const myths: Myth[] = [
       influencias: ['Cultura africana (entidades travessas)', 'Cultura indígena (conhecimento da floresta)', 'Folclore europeu (seres mágicos)'],
     },
     simbolismo: ['Travessura', 'Imprevisibilidade', 'Espírito livre', 'Resistência cultural'],
-    referencias: [genericReference],
-    image: 'https://placehold.co/600x400.png',
-    imageAiHint: 'Saci Pererê drawing',
+    referencias: [genericReference, multirioReference],
+    image: 'https://www.multirio.rj.gov.br/images/img_2017_10/SACI-int.jpg',
+    imageAiHint: 'Saci Pererê',
   },
   {
     id: '2',
@@ -37,9 +42,9 @@ export const myths: Myth[] = [
       influencias: ['Cosmovisão indígena', 'Espíritos guardiões da natureza'],
     },
     simbolismo: ['Proteção da natureza', 'Justiça ambiental', 'Mistério da floresta', 'Consequências da ganância'],
-    referencias: [genericReference],
-    image: 'https://placehold.co/600x400.png',
-    imageAiHint: 'Curupira illustration',
+    referencias: [genericReference, multirioReference],
+    image: 'https://www.multirio.rj.gov.br/images/img_2017_10/CURUPIRA-int.jpg',
+    imageAiHint: 'Curupira forest',
   },
   {
     id: '3',
@@ -54,9 +59,9 @@ export const myths: Myth[] = [
       influencias: ['Mitologia indígena (Mãe d\'água)', 'Possível sincretismo com sereias europeias'],
     },
     simbolismo: ['Perigo dos rios', 'Sedução fatal', 'Beleza enganosa', 'Forças da água'],
-    referencias: [genericReference],
-    image: 'https://placehold.co/600x400.png',
-    imageAiHint: 'Iara mermaid drawing',
+    referencias: [genericReference, multirioReference],
+    image: 'https://www.multirio.rj.gov.br/images/img_2017_10/IARA-int.jpg',
+    imageAiHint: 'Iara mermaid',
   },
   {
     id: '4',
@@ -71,9 +76,9 @@ export const myths: Myth[] = [
       influencias: ['Crenças indígenas (fogo fátuo)', 'Relatos de jesuítas', 'Folclore europeu (serpentes de fogo)'],
     },
     simbolismo: ['Proteção contra incêndios', 'Punição divina/natural', 'Guardião dos campos', 'Fenômeno natural mitificado'],
-    referencias: [genericReference],
-    image: 'https://placehold.co/600x400.png',
-    imageAiHint: 'Boitatá fire snake',
+    referencias: [genericReference, multirioReference],
+    image: 'https://www.multirio.rj.gov.br/images/img_2017_10/BOITATA-int.jpg',
+    imageAiHint: 'Boitatá snake',
   },
   {
     id: '5',
@@ -88,9 +93,9 @@ export const myths: Myth[] = [
       influencias: ['Folclore ibérico (lobisomens, almas penadas)', 'Moralismo católico medieval'],
     },
     simbolismo: ['Punição por pecado', 'Repreensão de desejos proibidos', 'Terror noturno', 'Controle social através do medo'],
-    referencias: [genericReference],
-    image: 'https://placehold.co/600x400.png',
-    imageAiHint: 'Mula Sem Cabeça myth',
+    referencias: [genericReference, multirioReference],
+    image: 'https://www.multirio.rj.gov.br/images/img_2017_10/MULA-SEM-CABECA-int.jpg',
+    imageAiHint: 'Headless Mule',
   },
   {
     id: '6',
@@ -105,9 +110,9 @@ export const myths: Myth[] = [
       influencias: ['Cultura ribeirinha amazônica', 'Observação do comportamento dos botos', 'Contos europeus de metamorfos'],
     },
     simbolismo: ['Sedução', 'Mistério dos rios', 'Transformação', 'Fertilidade', 'Encantamento'],
-    referencias: [genericReference],
-    image: 'https://placehold.co/600x400.png',
-    imageAiHint: 'Boto Cor de Rosa legend',
+    referencias: [genericReference, multirioReference],
+    image: 'https://www.multirio.rj.gov.br/images/img_2017_10/BOTO-int-002.jpg',
+    imageAiHint: 'Pink Dolphin',
   },
   {
     id: '7',
@@ -122,9 +127,9 @@ export const myths: Myth[] = [
       influencias: ['Mitologia indígena Tupi-Guarani', 'Culto à lua (Jaci)'],
     },
     simbolismo: ['Amor impossível', 'Transformação pela natureza', 'Beleza trágica', 'Conexão céu-terra-água'],
-    referencias: [genericReference],
-    image: 'https://placehold.co/600x400.png',
-    imageAiHint: 'Vitória Régia plant illustration',
+    referencias: [genericReference, multirioReference],
+    image: 'https://www.multirio.rj.gov.br/images/img_2017_10/VITORIA-REGIA-int.jpg',
+    imageAiHint: 'Vitória Régia',
   },
   {
     id: '8',
@@ -141,8 +146,38 @@ export const myths: Myth[] = [
     simbolismo: ['Proteção da caça e da floresta', 'Astúcia', 'Vínculo com animais selvagens', 'Equilíbrio ecológico'],
     referencias: [genericReference],
     image: 'https://placehold.co/600x400.png',
-    imageAiHint: 'Caipora forest spirit',
+    imageAiHint: 'Caipora spirit',
   },
+  {
+    id: '9',
+    slug: 'negrinho-do-pastoreio',
+    name: 'Negrinho do Pastoreio',
+    tipo: 'Lenda',
+    regiao: 'Sul do Brasil',
+    description: 'A história de um menino escravizado que, após ser punido injustamente por perder cavalos de seu patrão, é encontrado morto em um formigueiro, mas milagrosamente aparece montado em um cavalo baio, cercado pelos animais que havia perdido e por Nossa Senhora. Torna-se um protetor e ajudante para encontrar coisas perdidas.',
+    origem: {
+      periodo: 'Século XIX',
+      contexto: 'Surge durante o Brasil escravocrata, misturando elementos do catolicismo popular com a dura realidade dos escravizados no sul do país, especialmente no Rio Grande do Sul.',
+      influencias: ["Cristianismo Popular", "Cultura africana", "Cultura gaúcha", "Realidade da escravidão"]
+    },
+    simbolismo: [
+      "Justiça divina",
+      "Esperança",
+      "Proteção aos oprimidos",
+      "Encontrar objetos perdidos"
+    ],
+    referencias: [
+      {
+        titulo: "Dicionário do Folclore Brasileiro",
+        autor: "Luís da Câmara Cascudo",
+        editora: "Global Editora",
+        ano: 2000
+      },
+      multirioReference
+    ],
+    image: 'https://www.multirio.rj.gov.br/images/img_2017_10/NEGRINHO-int.jpg',
+    imageAiHint: 'Negrinho Pastoreio'
+  }
 ];
 
 export function getMythBySlug(slug: string): Myth | undefined {
