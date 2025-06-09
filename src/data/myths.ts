@@ -221,8 +221,8 @@ export const myths: Myth[] = [
     description: 'O Mapinguari é uma criatura gigante e peluda que habita as profundezas da floresta amazônica. Descrito com um olho só na testa e uma boca na barriga, ele emite um grito apavorante e exala um odor fétido. É temido por sua força e ferocidade, sendo considerado o guardião da floresta contra invasores.',
     origem: {
       periodo: 'Pré-colonial/Contemporâneo',
-      contexto: 'Lendas indígenas sobre seres monstruosos da floresta, possivelmente inspirados em animais pré-históricos como a preguiça gigante.',
-      influencias: ['Criptozoologia', 'Folclore indígena amazônico', 'Relatos de exploradores']
+      contexto: 'Lendas indígenas sobre seres monstruosos da floresta, possivelmente inspirados em memórias de megafauna extinta como a preguiça gigante. Figura proeminente em relatos locais e de exploradores.',
+      influencias: ['Folclore indígena amazônico']
     },
     simbolismo: ['Mistério da selva', 'Proteção natureza', 'Força bruta', 'Medo desconhecido'],
     referencias: [genericReference, multirioReference],
