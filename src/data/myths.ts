@@ -41,7 +41,7 @@ export const myths: Myth[] = [
       contexto: 'Crenças indígenas ancestrais sobre a necessidade de proteger a floresta e seus habitantes.',
       influencias: ['Cosmovisão indígena', 'Espíritos guardiões da natureza'],
     },
-    simbolismo: ['Proteção da natureza', 'Justiça ambiental', 'Mistério da floresta', 'Consequências da ganância'],
+    simbolismo: ['Proteção da naturez', 'Justiça ambiental', 'Mistério da florest', 'Consequências ganância'],
     referencias: [genericReference, multirioReference],
     image: 'https://www.multirio.rj.gov.br/images/img_2017_10/CURUPIRA-int.jpg',
     imageAiHint: 'Curupira forest',
@@ -75,7 +75,7 @@ export const myths: Myth[] = [
       contexto: 'Medo do fogo fátuo e dos incêndios florestais; proteção dos campos e matas.',
       influencias: ['Crenças indígenas (fogo fátuo)', 'Relatos de jesuítas', 'Folclore europeu (serpentes de fogo)'],
     },
-    simbolismo: ['Proteção contra incêndios', 'Punição divina/natural', 'Guardião dos campos', 'Fenômeno natural mitificado'],
+    simbolismo: ['Proteção incêndios', 'Punição divina', 'Guardião dos campos', 'Fenômeno mitificado'],
     referencias: [genericReference, multirioReference],
     image: 'https://www.multirio.rj.gov.br/images/img_2017_10/BOITATA-int.jpg',
     imageAiHint: 'Boitatá snake',
@@ -92,7 +92,7 @@ export const myths: Myth[] = [
       contexto: 'Moralismo religioso católico, visando coibir relações consideradas pecaminosas e reforçar o celibato clerical.',
       influencias: ['Folclore ibérico (lobisomens, almas penadas)', 'Moralismo católico medieval'],
     },
-    simbolismo: ['Punição por pecado', 'Repreensão de desejos proibidos', 'Terror noturno', 'Controle social através do medo'],
+    simbolismo: ['Punição por pecado', 'Repreensão desejos', 'Terror noturno', 'Controle social'],
     referencias: [genericReference, multirioReference],
     image: 'https://www.multirio.rj.gov.br/images/img_2017_10/MULA-SEM-CABECA-int.jpg',
     imageAiHint: 'Headless Mule',
@@ -107,7 +107,7 @@ export const myths: Myth[] = [
     origem: {
       periodo: 'Popularizado nos séculos XIX/XX',
       contexto: 'Explicação mítica para gravidezes inesperadas em comunidades ribeirinhas e o fascínio pelos botos.',
-      influencias: ['Cultura ribeirinha amazônica', 'Observação do comportamento dos botos', 'Contos europeus de metamorfos'],
+      influencias: ['Cultura ribeirinha amazônica', 'Observação dos botos', 'Contos europeus de metamorfos'],
     },
     simbolismo: ['Sedução', 'Mistério dos rios', 'Transformação', 'Fertilidade', 'Encantamento'],
     referencias: [genericReference, multirioReference],
@@ -126,7 +126,7 @@ export const myths: Myth[] = [
       contexto: 'Explicação mítica para a origem da planta Vitória Régia e sua beleza singular, ligada a elementos celestiais.',
       influencias: ['Mitologia indígena Tupi-Guarani', 'Culto à lua (Jaci)'],
     },
-    simbolismo: ['Amor impossível', 'Transformação pela natureza', 'Beleza trágica', 'Conexão céu-terra-água'],
+    simbolismo: ['Amor impossível', 'Transformação natureza', 'Beleza trágica', 'Conexão céu-terra-água'],
     referencias: [genericReference, multirioReference],
     image: 'https://www.multirio.rj.gov.br/images/img_2017_10/VITORIA-REGIA-int.jpg',
     imageAiHint: 'Vitória Régia',
@@ -143,8 +143,8 @@ export const myths: Myth[] = [
       contexto: 'Crenças indígenas sobre protetores da caça e da floresta, assegurando o equilíbrio e o respeito dos caçadores.',
       influencias: ['Cosmovisão indígena (Tupi-Guarani)', 'Espíritos da floresta'],
     },
-    simbolismo: ['Proteção da caça e da floresta', 'Astúcia', 'Vínculo com animais selvagens', 'Equilíbrio ecológico'],
-    referencias: [genericReference],
+    simbolismo: ['Proteção da caça', 'Astúcia', 'Vínculo com animais', 'Equilíbrio ecológico'],
+    referencias: [genericReference, multirioReference],
     image: 'https://placehold.co/600x400.png',
     imageAiHint: 'Caipora spirit',
   },
@@ -177,6 +177,142 @@ export const myths: Myth[] = [
     ],
     image: 'https://www.multirio.rj.gov.br/images/img_2017_10/NEGRINHO-int.jpg',
     imageAiHint: 'Negrinho Pastoreio'
+  },
+  {
+    id: '10',
+    slug: 'cuca',
+    name: 'Cuca',
+    tipo: 'Lenda',
+    regiao: 'Todo o Brasil (popularizada por Monteiro Lobato)',
+    description: 'A Cuca é uma velha bruxa com cabeça de jacaré e unhas compridas. Conhecida por raptar crianças desobedientes, sua figura é proeminente no folclore infantil, especialmente após as obras de Monteiro Lobato. Dizem que ela dorme apenas uma noite a cada sete anos, e quando está acordada, fica à espreita.',
+    origem: {
+      periodo: 'Pós-colonial (com raízes ibéricas)',
+      contexto: 'Figura do "coco" ou "coca" do folclore ibérico, adaptada no Brasil. Ganhou popularidade nacional com Sítio do Picapau Amarelo.',
+      influencias: ['Folclore ibérico (Coca)', 'Lendas de monstros raptores de crianças', 'Literatura infantil brasileira']
+    },
+    simbolismo: ['Medo infantil', 'Autoridade', 'Personificação perigo', 'Castigo desobediência'],
+    referencias: [genericReference, multirioReference],
+    image: 'https://www.multirio.rj.gov.br/images/img_2017_10/CUCA-int.jpg',
+    imageAiHint: 'Cuca witch'
+  },
+  {
+    id: '11',
+    slug: 'lobisomem',
+    name: 'Lobisomem',
+    tipo: 'Lenda Universal (versão brasileira)',
+    regiao: 'Todo o Brasil (especialmente áreas rurais)',
+    description: 'O Lobisomem é um homem que, sob uma maldição (frequentemente o sétimo filho homem de uma prole só de homens, ou alguém mordido por outro lobisomem), transforma-se em uma criatura meio homem, meio lobo durante as noites de lua cheia. Ele vaga pelos campos e vilarejos, uivando e atacando animais e, às vezes, pessoas.',
+    origem: {
+      periodo: 'Colonial (origem europeia medieval)',
+      contexto: 'Lenda trazida pelos colonizadores portugueses, adaptada à realidade e crenças locais.',
+      influencias: ['Folclore europeu medieval', 'Licantropia', 'Crenças em metamorfose']
+    },
+    simbolismo: ['Maldição', 'Natureza selvagem', 'Dualidade humana', 'Terror rural'],
+    referencias: [genericReference, multirioReference],
+    image: 'https://www.multirio.rj.gov.br/images/img_2017_10/LOBISOMEM-int.jpg',
+    imageAiHint: 'Lobisomem werewolf'
+  },
+  {
+    id: '12',
+    slug: 'mapinguari',
+    name: 'Mapinguari',
+    tipo: 'Lenda Amazônica',
+    regiao: 'Amazônia',
+    description: 'O Mapinguari é uma criatura gigante e peluda que habita as profundezas da floresta amazônica. Descrito com um olho só na testa e uma boca na barriga, ele emite um grito apavorante e exala um odor fétido. É temido por sua força e ferocidade, sendo considerado o guardião da floresta contra invasores.',
+    origem: {
+      periodo: 'Pré-colonial/Contemporâneo',
+      contexto: 'Lendas indígenas sobre seres monstruosos da floresta, possivelmente inspirados em animais pré-históricos como a preguiça gigante.',
+      influencias: ['Criptozoologia', 'Folclore indígena amazônico', 'Relatos de exploradores']
+    },
+    simbolismo: ['Mistério da selva', 'Proteção natureza', 'Força bruta', 'Medo desconhecido'],
+    referencias: [genericReference, multirioReference],
+    image: 'https://www.multirio.rj.gov.br/images/img_2017_10/MAPINGUARI-int.jpg',
+    imageAiHint: 'Mapinguari monster'
+  },
+  {
+    id: '13',
+    slug: 'matinta-perera',
+    name: 'Matinta Perera',
+    tipo: 'Lenda Amazônica/Nordestina',
+    regiao: 'Norte e Nordeste',
+    description: 'A Matinta Perera é uma velha bruxa que se transforma em um pássaro agourento (geralmente um rasga-mortalha ou coruja) durante a noite. Ela voa sobre as casas assobiando e pedindo fumo ou café. Se não atendida, lança pragas. Pode também aparecer como uma velha sinistra.',
+    origem: {
+      periodo: 'Indeterminado',
+      contexto: 'Crenças sobre bruxas e metamorfos, associadas a aves noturnas e seus cantos interpretados como presságios.',
+      influencias: ['Folclore indígena', 'Crenças europeias em bruxaria', 'Aves de mau agouro']
+    },
+    simbolismo: ['Agouro', 'Bruxaria', 'Transformação', 'Barganha sobrenatural'],
+    referencias: [genericReference, multirioReference],
+    image: 'https://www.multirio.rj.gov.br/images/img_2017_10/MATINTA-int.jpg',
+    imageAiHint: 'Matinta Perera'
+  },
+  {
+    id: '14',
+    slug: 'corpo-seco',
+    name: 'Corpo-Seco',
+    tipo: 'Lenda',
+    regiao: 'Sudeste e Centro-Oeste',
+    description: 'O Corpo-Seco é a alma penada de uma pessoa muito má em vida, tão ruim que nem a terra o aceita após a morte. Seu corpo ressecado e pútrido vaga pelas estradas e matas, assombrando e atacando os vivos. Diz-se que ele se agarra às pessoas para sugar sua energia vital.',
+    origem: {
+      periodo: 'Colonial/Pós-colonial',
+      contexto: 'Moralismo religioso e crenças sobre punição pós-morte para indivíduos extremamente perversos.',
+      influencias: ['Catolicismo popular', 'Lendas de almas penadas', 'Moralidade e punição']
+    },
+    simbolismo: ['Punição eterna', 'Mal que perdura', 'Assombração', 'Consequências vida ímpia'],
+    referencias: [genericReference, multirioReference],
+    image: 'https://www.multirio.rj.gov.br/images/img_2017_10/CORPO-SECO-int.jpg',
+    imageAiHint: 'Corpo Seco'
+  },
+  {
+    id: '15',
+    slug: 'caboclo-dagua',
+    name: 'Caboclo D\'água',
+    tipo: 'Lenda Ribeirinha',
+    regiao: 'Bacia do Rio São Francisco (Nordeste/Sudeste)',
+    description: 'O Caboclo D\'água é uma criatura que habita o Rio São Francisco. Descrito como um ser forte, musculoso, de pele bronzeada e cabelos longos, ele protege o rio e seus peixes. Pescadores relatam que ele vira embarcações e afoga aqueles que pescam de forma predatória ou desrespeitam o rio.',
+    origem: {
+      periodo: 'Indeterminado',
+      contexto: 'Crenças de comunidades ribeirinhas sobre um guardião do rio, personificando os perigos e a necessidade de respeito pela natureza fluvial.',
+      influencias: ['Folclore ribeirinho', 'Espíritos protetores da água', 'Lendas indígenas locais']
+    },
+    simbolismo: ['Proteção fluvial', 'Guardião do rio', 'Força da natureza', 'Respeito recursos'],
+    referencias: [genericReference, multirioReference],
+    image: 'https://www.multirio.rj.gov.br/images/img_2017_10/CABOCLO-DAGUA-int-002.jpg',
+    imageAiHint: 'Caboclo Dagua'
+  },
+  {
+    id: '16',
+    slug: 'boiuna',
+    name: 'Boiúna (Cobra Grande)',
+    tipo: 'Lenda Amazônica',
+    regiao: 'Amazônia',
+    description: 'A Boiúna, também conhecida como Cobra Grande, é uma gigantesca serpente escura que habita os rios e igarapés da Amazônia. Capaz de virar embarcações, criar tempestades e devorar pessoas, é uma das entidades mais temidas da região. Alguns dizem que seus olhos brilham na escuridão como faróis.',
+    origem: {
+      periodo: 'Pré-colonial',
+      contexto: 'Lendas indígenas sobre serpentes ancestrais e poderosas, personificando a força e os perigos dos grandes rios amazônicos.',
+      influencias: ['Mitologia indígena amazônica (Sucuri, Anaconda)', 'Relatos de grandes serpentes']
+    },
+    simbolismo: ['Poder primordial', 'Força natureza', 'Perigo oculto', 'Espírito ancestral'],
+    referencias: [genericReference, multirioReference],
+    image: 'https://www.multirio.rj.gov.br/images/img_2017_10/BOIUNA-int.jpg',
+    imageAiHint: 'Boiuna snake'
+  },
+  {
+    id: '17',
+    slug: 'anhanga',
+    name: 'Anhangá',
+    tipo: 'Mito Indígena Tupi-Guarani',
+    regiao: 'Presente na cosmovisão Tupi-Guarani (Brasil)',
+    description: 'Anhangá é um espírito protetor dos animais da floresta na mitologia Tupi-Guarani. Geralmente invisível ou aparecendo como um veado branco com olhos de fogo, ele protege os animais contra caçadores cruéis ou aqueles que caçam mais do que o necessário. Pode confundir os caçadores ou até mesmo puni-los.',
+    origem: {
+      periodo: 'Pré-colonial',
+      contexto: 'Crenças indígenas sobre espíritos guardiões da fauna e a necessidade de uma caça respeitosa e sustentável.',
+      influencias: ['Cosmovisão Tupi-Guarani', 'Espíritos da natureza', 'Relação respeito caça']
+    },
+    simbolismo: ['Proteção animal', 'Equilíbrio da caça', 'Espírito da floresta', 'Justiça ecológica'],
+    referencias: [genericReference, multirioReference],
+    image: 'https://www.multirio.rj.gov.br/images/img_2017_10/ANHANGA-int.jpg',
+    imageAiHint: 'Anhangá spirit'
   }
 ];
 
@@ -187,3 +323,4 @@ export function getMythBySlug(slug: string): Myth | undefined {
 export function getAllMyths(): Myth[] {
   return myths;
 }
+
