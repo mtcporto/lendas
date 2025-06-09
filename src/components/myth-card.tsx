@@ -1,7 +1,9 @@
+
 import Link from 'next/link';
 import Image from 'next/image';
 import type { Myth } from '@/lib/types';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
 import { ArrowRight } from 'lucide-react';
 
 interface MythCardProps {
@@ -32,6 +34,10 @@ export function MythCard({ myth }: MythCardProps) {
             <p className="text-sm text-muted-foreground mt-2 line-clamp-3">
               {myth.description}
             </p>
+            <div className="mt-3 flex flex-wrap gap-2 text-xs">
+              <Badge variant="outline" className="border-primary/50 text-primary/90">{myth.tipo}</Badge>
+              <Badge variant="outline" className="border-accent/50 text-accent/90">{myth.regiao}</Badge>
+            </div>
           </div>
           <div className="mt-4 text-sm font-semibold text-accent group-hover:text-primary flex items-center">
             Saiba mais <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
