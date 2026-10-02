@@ -10,9 +10,9 @@ import { ArrowLeft, BookOpenText, MapPin, Tag, History, SparklesIcon, LinkIcon }
 import { notFound } from 'next/navigation';
 
 interface MythPageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 export async function generateStaticParams() {
@@ -22,8 +22,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function MythPage({ params }: MythPageProps) {
-  const myth = getMythBySlug(params.slug);
+export default async function MythPage({ params }: MythPageProps) {
+  const { slug } = await params;
+  const myth = getMythBySlug(slug);
 
   if (!myth) {
     notFound();
@@ -143,7 +144,8 @@ export default function MythPage({ params }: MythPageProps) {
 }
 
 export async function generateMetadata({ params }: MythPageProps) {
-  const myth = getMythBySlug(params.slug);
+  const { slug } = await params;
+  const myth = getMythBySlug(slug);
   if (!myth) {
     return {
       title: 'Lenda não encontrada',
