@@ -6,11 +6,6 @@ const genericReference: Referencia = {
   url: "https://pt.wikipedia.org/wiki/Lendas_do_folclore_brasileiro"
 };
 
-const multirioReference: Referencia = {
-  titulo: "Diz a Lenda - Multirio",
-  url: "https://www.multirio.rj.gov.br/index.php/multiclube/9a11/diz-a-lenda"
-};
-
 const cascudoDicionarioReference: Referencia = {
   titulo: "Dicionário do Folclore Brasileiro",
   autor: "Luís da Câmara Cascudo",
@@ -32,8 +27,8 @@ export const myths: Myth[] = [
       influencias: ['Cultura indígena (espíritos da floresta)', 'Cultura africana (entidades travessas, gorro mágico)', 'Folclore europeu (elementos de duendes)'],
     },
     simbolismo: ['Travessura', 'Inteligência', 'Liberdade', 'Guardião dos segredos da floresta', 'Mistura cultural'],
-    referencias: [genericReference, multirioReference, cascudoDicionarioReference],
-    image: 'https://www.multirio.rj.gov.br/images/img_2017_10/SACI-int.jpg',
+    referencias: [genericReference, cascudoDicionarioReference],
+    image: '/images/saci.png',
     imageAiHint: 'Saci Pererê',
   },
   {
@@ -49,8 +44,8 @@ export const myths: Myth[] = [
       influencias: ['Cosmovisão indígena', 'Espíritos guardiões da natureza'],
     },
     simbolismo: ['Proteção da natureza', 'Guardião da floresta', 'Justiça ambiental', 'Astúcia', 'Respeito aos animais'],
-    referencias: [genericReference, multirioReference, cascudoDicionarioReference],
-    image: 'https://www.multirio.rj.gov.br/images/img_2017_10/CURUPIRA-int.jpg',
+    referencias: [genericReference, cascudoDicionarioReference],
+    image: '/images/Curupira.png',
     imageAiHint: 'Curupira forest',
   },
   {
@@ -66,8 +61,8 @@ export const myths: Myth[] = [
       influencias: ['Mitologia indígena (Mãe d\'água, Ipupiara)', 'Sereias europeias'],
     },
     simbolismo: ['Sedução perigosa', 'Beleza fatal', 'Mistérios dos rios', 'Protetora das águas', 'Transformação cultural'],
-    referencias: [genericReference, multirioReference, cascudoDicionarioReference],
-    image: 'https://www.multirio.rj.gov.br/images/img_2017_10/IARA-int.jpg',
+    referencias: [genericReference, cascudoDicionarioReference],
+    image: '/images/Iara.png',
     imageAiHint: 'Iara mermaid',
   },
   {
@@ -83,8 +78,8 @@ export const myths: Myth[] = [
       influencias: ['Crenças indígenas (fogo fátuo, cobras sagradas)', 'Relatos de jesuítas', 'Folclore europeu (serpentes de fogo)'],
     },
     simbolismo: ['Proteção contra incêndios', 'Guardião dos campos', 'Punição aos maus', 'Luz na escuridão', 'Mistério natural'],
-    referencias: [genericReference, multirioReference, cascudoDicionarioReference],
-    image: 'https://www.multirio.rj.gov.br/images/img_2017_10/BOITATA-int.jpg',
+    referencias: [genericReference, cascudoDicionarioReference],
+    image: '/images/boitata.png',
     imageAiHint: 'Boitatá snake',
   },
   {
@@ -100,8 +95,8 @@ export const myths: Myth[] = [
       influencias: ['Folclore ibérico (lobisomens, almas penadas)', 'Moralismo católico medieval'],
     },
     simbolismo: ['Punição por transgressão', 'Medo do pecado', 'Controle social e religioso', 'Terror noturno'],
-    referencias: [genericReference, multirioReference, cascudoDicionarioReference],
-    image: 'https://www.multirio.rj.gov.br/images/img_2017_10/MULA-SEM-CABECA-int.jpg',
+    referencias: [genericReference, cascudoDicionarioReference],
+    image: '/images/MulaSemCabeca.png',
     imageAiHint: 'Headless Mule',
   },
   {
@@ -117,8 +112,8 @@ export const myths: Myth[] = [
       influencias: ['Cultura ribeirinha amazônica', 'Observação dos botos e seu comportamento social', 'Contos europeus de metamorfos e sedutores'],
     },
     simbolismo: ['Sedução', 'Encantamento', 'Mistério dos rios', 'Transformação', 'Paternidade desconhecida'],
-    referencias: [genericReference, multirioReference, cascudoDicionarioReference],
-    image: 'https://www.multirio.rj.gov.br/images/img_2017_10/BOTO-int-002.jpg',
+    referencias: [genericReference, cascudoDicionarioReference],
+    image: '/images/boto.png',
     imageAiHint: 'Pink Dolphin',
   },
   {
@@ -134,8 +129,8 @@ export const myths: Myth[] = [
       influencias: ['Mitologia indígena Tupi-Guarani', 'Culto à lua (Jaci)', 'Poesia e beleza da natureza amazônica'],
     },
     simbolismo: ['Amor impossível', 'Transformação pela natureza', 'Beleza e tragédia', 'Conexão céu-terra-água', 'Sacrifício'],
-    referencias: [genericReference, multirioReference, cascudoDicionarioReference],
-    image: 'https://www.multirio.rj.gov.br/images/img_2017_10/VITORIA-REGIA-int.jpg',
+    referencias: [genericReference, cascudoDicionarioReference],
+    image: '/images/VitoriaRegia.png',
     imageAiHint: 'Vitória Régia',
   },
   {
@@ -151,8 +146,8 @@ export const myths: Myth[] = [
       influencias: ['Cosmovisão indígena (Tupi-Guarani principalmente)', 'Espíritos da floresta', 'Rituais de caça'],
     },
     simbolismo: ['Proteção da caça e da floresta', 'Astúcia', 'Vínculo com animais selvagens', 'Equilíbrio ecológico', 'Respeito às tradições'],
-    referencias: [genericReference, multirioReference, cascudoDicionarioReference],
-    image: 'https://placehold.co/600x400.png',
+    referencias: [genericReference, cascudoDicionarioReference],
+    image: '/images/Caipora.png',
     imageAiHint: 'Caipora spirit',
   },
   {
@@ -176,10 +171,9 @@ export const myths: Myth[] = [
     ],
     referencias: [
       cascudoDicionarioReference,
-      multirioReference,
       genericReference
     ],
-    image: 'https://www.multirio.rj.gov.br/images/img_2017_10/NEGRINHO-int.jpg',
+    image: '/images/negrinhodopastoreiro.png',
     imageAiHint: 'Negrinho Pastoreio'
   },
   {
@@ -195,8 +189,8 @@ export const myths: Myth[] = [
       influencias: ['Folclore ibérico (Coca, Bicho-Papão)', 'Lendas de monstros raptores de crianças', 'Literatura infantil brasileira (Monteiro Lobato)']
     },
     simbolismo: ['Medo infantil', 'Ameaça e perigo', 'Bruxaria', 'Castigo para desobediência', 'Astúcia maligna'],
-    referencias: [genericReference, multirioReference, cascudoDicionarioReference],
-    image: 'https://www.multirio.rj.gov.br/images/img_2017_10/CUCA-int.jpg',
+    referencias: [genericReference, cascudoDicionarioReference],
+    image: '/images/cuca.png',
     imageAiHint: 'Cuca witch'
   },
   {
@@ -212,8 +206,8 @@ export const myths: Myth[] = [
       influencias: ['Folclore europeu medieval (Licantropia)', 'Crenças em metamorfose', 'Medo do desconhecido e da noite']
     },
     simbolismo: ['Maldição', 'Força bruta e selvagem', 'Dualidade (homem e besta)', 'Terror noturno rural', 'Instintos primitivos'],
-    referencias: [genericReference, multirioReference, cascudoDicionarioReference],
-    image: 'https://www.multirio.rj.gov.br/images/img_2017_10/LOBISOMEM-int.jpg',
+    referencias: [genericReference, cascudoDicionarioReference],
+    image: '/images/Lobisomem.png',
     imageAiHint: 'Lobisomem werewolf'
   },
   {
@@ -229,8 +223,8 @@ export const myths: Myth[] = [
       influencias: ['Folclore indígena amazônico', 'Possível memória de megafauna extinta']
     },
     simbolismo: ['Mistério da selva profunda', 'Guardião da floresta', 'Força primitiva', 'Medo do desconhecido', 'Elo com o passado'],
-    referencias: [genericReference, multirioReference, cascudoDicionarioReference],
-    image: 'https://www.multirio.rj.gov.br/images/img_2017_10/MAPINGUARI-int.jpg',
+    referencias: [genericReference, cascudoDicionarioReference],
+    image: '/images/mapinguari.png',
     imageAiHint: 'Mapinguari monster'
   },
   {
@@ -246,8 +240,8 @@ export const myths: Myth[] = [
       influencias: ['Folclore indígena (seres da noite)', 'Crenças europeias em bruxaria e metamorfos', 'Aves de mau agouro']
     },
     simbolismo: ['Agouro e presságio', 'Bruxaria popular', 'Transformação', 'Pacto e promessa', 'Espírito da noite'],
-    referencias: [genericReference, multirioReference, cascudoDicionarioReference],
-    image: 'https://www.multirio.rj.gov.br/images/img_2017_10/MATINTA-int.jpg',
+    referencias: [genericReference, cascudoDicionarioReference],
+    image: '/images/MatintaPereira.png',
     imageAiHint: 'Matinta Perera'
   },
   {
@@ -263,8 +257,8 @@ export const myths: Myth[] = [
       influencias: ['Catolicismo popular (almas penadas, purgatório)', 'Moralidade e punição exemplar', 'Contos de assombração']
     },
     simbolismo: ['Punição eterna para maldade extrema', 'Rejeição pela terra', 'Assombração', 'Peso dos pecados', 'Alma penada'],
-    referencias: [genericReference, multirioReference, cascudoDicionarioReference],
-    image: 'https://www.multirio.rj.gov.br/images/img_2017_10/CORPO-SECO-int.jpg',
+    referencias: [genericReference, cascudoDicionarioReference],
+    image: '/images/corposeco.png',
     imageAiHint: 'Corpo Seco'
   },
   {
@@ -280,8 +274,8 @@ export const myths: Myth[] = [
       influencias: ['Folclore ribeirinho', 'Espíritos protetores da água (africanos e indígenas)', 'Carrancas do São Francisco']
     },
     simbolismo: ['Guardião do rio', 'Protetor dos peixes', 'Força da natureza fluvial', 'Respeito aos recursos naturais', 'Perigos do rio'],
-    referencias: [genericReference, multirioReference, cascudoDicionarioReference],
-    image: 'https://www.multirio.rj.gov.br/images/img_2017_10/CABOCLO-DAGUA-int-002.jpg',
+    referencias: [genericReference, cascudoDicionarioReference],
+    image: '/images/cablocodagua.png',
     imageAiHint: 'Caboclo Dagua'
   },
   {
@@ -297,8 +291,8 @@ export const myths: Myth[] = [
       influencias: ['Mitologia indígena amazônica (Sucuri, Anaconda)', 'Relatos de grandes serpentes', 'Medo das águas profundas']
     },
     simbolismo: ['Poder primordial da natureza', 'Mãe dos peixes', 'Perigo oculto nas águas', 'Força selvagem e indomável', 'Mistério amazônico'],
-    referencias: [genericReference, multirioReference, cascudoDicionarioReference],
-    image: 'https://www.multirio.rj.gov.br/images/img_2017_10/BOIUNA-int.jpg',
+    referencias: [genericReference, cascudoDicionarioReference],
+    image: '/images/boiuna.png',
     imageAiHint: 'Boiuna snake'
   },
   {
@@ -314,8 +308,8 @@ export const myths: Myth[] = [
       influencias: ['Cosmovisão Tupi-Guarani', 'Dualidade bem/mal nos espíritos da natureza', 'Relação de respeito com a caça']
     },
     simbolismo: ['Proteção animal e da caça', 'Espírito da floresta', 'Equilíbrio ecológico', 'Justiça da natureza', 'Dualidade espiritual'],
-    referencias: [genericReference, multirioReference, cascudoDicionarioReference],
-    image: 'https://www.multirio.rj.gov.br/images/img_2017_10/ANHANGA-int.jpg',
+    referencias: [genericReference, cascudoDicionarioReference],
+    image: '/images/anhanga.png',
     imageAiHint: 'Anhangá spirit'
   }
 ];

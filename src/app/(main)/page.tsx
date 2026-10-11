@@ -1,20 +1,20 @@
 import { getAllMyths } from '@/data/myths';
 import { MythCard } from '@/components/myth-card';
-import type { Myth } from '@/lib/types';
 
 export default function HomePage() {
-  const myths: Myth[] = getAllMyths();
-
+  const myths = getAllMyths();
   return (
-    <div className="container mx-auto py-8 px-4">
-      <h1 className="font-headline text-5xl text-center mb-12 text-primary drop-shadow-sm">
-        Mitos e Lendas do Brasil
-      </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-        {myths.map((myth) => (
-          <MythCard key={myth.id} myth={myth} />
-        ))}
-      </div>
+    <div className="atlas-container">
+      <section className="atlas-intro" aria-labelledby="atlas-title">
+        <p className="eyebrow">Um imaginário que atravessa gerações</p>
+        <h1 id="atlas-title">Onde a floresta<br /><em>guarda histórias.</em></h1>
+        <p className="intro-description">Entre rios, matas e noites de luar, vivem os personagens do nosso folclore. Descubra as histórias, as origens e os mistérios das lendas brasileiras.</p>
+        <a className="atlas-link" href="#colecao">Explore as lendas <span aria-hidden="true">↓</span></a>
+      </section>
+      <section id="colecao" className="atlas-collection" aria-labelledby="collection-title">
+        <div className="collection-heading"><h2 id="collection-title">O nosso imaginário</h2><span>{myths.length} histórias para descobrir</span></div>
+        <div className="myth-grid">{myths.map(myth => <MythCard key={myth.id} myth={myth} />)}</div>
+      </section>
     </div>
   );
 }

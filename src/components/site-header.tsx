@@ -1,14 +1,12 @@
 import Link from 'next/link';
-import { Sparkles } from 'lucide-react';
+import { Leaf } from 'lucide-react';
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 max-w-screen-2xl items-center">
-        <Link href="/" className="flex items-center space-x-2">
-          <Sparkles className="h-8 w-8 text-primary" />
-          <span className="font-headline text-3xl font-bold text-primary">Lendas</span>
-        </Link>
+    <header className="atlas-header">
+      <div className="atlas-container header-inner">
+        <Link href="/" className="atlas-brand" aria-label="Lendas do Brasil — início"><Leaf size={25} aria-hidden="true" /><span>Lendas<span className="brand-subtitle">DO BRASIL</span></span></Link>
+        <nav aria-label="Navegação principal"><Link href="/#colecao" className="atlas-link">Explore o folclore <span aria-hidden="true">↗</span></Link></nav>
       </div>
     </header>
   );

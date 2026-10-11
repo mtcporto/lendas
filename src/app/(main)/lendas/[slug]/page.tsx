@@ -1,10 +1,9 @@
 
 import { getMythBySlug, getAllMyths } from '@/data/myths';
-import type { Myth } from '@/lib/types';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { ArrowLeft, BookOpenText, MapPin, Tag, History, SparklesIcon, LinkIcon } from 'lucide-react';
 import { notFound } from 'next/navigation';
@@ -31,7 +30,7 @@ export default async function MythPage({ params }: MythPageProps) {
   }
 
   return (
-    <div className="container mx-auto py-8 px-4">
+    <div className="atlas-container myth-detail">
       <div className="mb-8">
         <Button variant="outline" asChild>
           <Link href="/" className="flex items-center group">
@@ -41,26 +40,27 @@ export default async function MythPage({ params }: MythPageProps) {
         </Button>
       </div>
 
-      <article className="bg-card p-6 sm:p-8 rounded-lg shadow-lg md:flex md:gap-8">
-        <div className="w-full md:w-2/5 mb-8 md:mb-0">
-          {/* Changed md:aspect-auto md:h-full to md:aspect-[3/4] */}
-          <div className="relative aspect-video md:aspect-[3/4] w-full rounded-lg overflow-hidden shadow-md">
+      <article className="detail-layout">
+        <div className="detail-art">
+
+          <div className="relative aspect-[2/3] w-full overflow-hidden rounded-lg">
             <Image
               src={myth.image}
               alt={myth.name}
-              layout="fill"
-              objectFit="contain"
+              fill
+              priority
+              sizes="(max-width: 900px) 100vw, 40vw"
               data-ai-hint={myth.imageAiHint}
-              className="transition-transform duration-500 hover:scale-105"
+              className="object-contain"
             />
           </div>
         </div>
 
-        <div className="w-full md:w-3/5">
+        <div className="detail-copy">
           <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl text-primary mb-4 text-center md:text-left">
             {myth.name}
           </h1>
-          
+
           <div className="mb-6 flex flex-wrap justify-center md:justify-start items-center gap-x-4 gap-y-2 text-sm">
             <Badge variant="secondary" className="flex items-center gap-1 py-1 px-3">
               <Tag className="h-4 w-4" /> {myth.tipo}
@@ -77,7 +77,7 @@ export default async function MythPage({ params }: MythPageProps) {
           </div>
 
           <section className="mt-8">
-            <h2 className="text-2xl font-headline text-secondary mb-3 flex items-center">
+            <h2 className="text-2xl font-headline text-foreground mb-3 flex items-center">
               <History className="mr-2 h-6 w-6 text-accent" /> Origem
             </h2>
             <Card className="p-4 sm:p-6 bg-background/50 border-border/50 shadow-sm">
@@ -95,7 +95,7 @@ export default async function MythPage({ params }: MythPageProps) {
           </section>
 
           <section className="mt-8">
-            <h2 className="text-2xl font-headline text-secondary mb-3 flex items-center">
+            <h2 className="text-2xl font-headline text-foreground mb-3 flex items-center">
               <SparklesIcon className="mr-2 h-6 w-6 text-accent" /> Simbolismo
             </h2>
             <div className="flex flex-wrap gap-2">
@@ -104,10 +104,10 @@ export default async function MythPage({ params }: MythPageProps) {
               ))}
             </div>
           </section>
-          
+
           {myth.referencias && myth.referencias.length > 0 && (
             <section className="mt-8">
-              <h2 className="text-2xl font-headline text-secondary mb-3 flex items-center">
+              <h2 className="text-2xl font-headline text-foreground mb-3 flex items-center">
                  <LinkIcon className="mr-2 h-6 w-6 text-accent" /> Referências
               </h2>
               <ul className="list-none pl-0 space-y-2 text-foreground/80">
@@ -130,7 +130,7 @@ export default async function MythPage({ params }: MythPageProps) {
           )}
         </div>
       </article>
-      
+
       <div className="mt-12 text-center">
          <Button variant="ghost" asChild className="text-accent hover:text-primary hover:bg-accent/10">
            <Link href="https://brasilescola.uol.com.br/folclore" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
