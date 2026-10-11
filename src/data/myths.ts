@@ -58,7 +58,7 @@ export const myths: Myth[] = [
       autor: 'Luís da Câmara Cascudo',
       editora: 'Global Editora'
     }],
-    image: '/images/Curupira.png',
+    image: '/images/Curupira2.png',
     imageAiHint: 'Curupira forest',
   },
   {
