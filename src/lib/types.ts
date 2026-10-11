@@ -20,6 +20,17 @@ export interface Myth {
   tipo: string;
   regiao: string;
   description: string;
+  subtitle?: string;
+  nomesAssociados?: string;
+  tradicoesRelacionadas?: string;
+  variantesRegionais?: string;
+  personagensTradicao?: string;
+  nomePopular?: string;
+  origemResumo?: string;
+  origemResumoTitulo?: string;
+  tradicoesRegistradas?: string;
+  fonteHistorica?: string;
+  fonteHistoricaTitulo?: string;
   origem: Origem;
   simbolismo: string[];
   referencias: Referencia[];

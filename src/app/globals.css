@@ -95,3 +95,14 @@ a:focus-visible { outline: 2px solid hsl(var(--primary)); outline-offset: 6px; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
+
+.atlas-hero { position: relative; isolation: isolate; min-height: 640px; display: grid; place-items: center; overflow: hidden; }
+.atlas-hero-image { object-fit: cover; object-position: center; z-index: -2; }
+.atlas-hero-shade { position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, #0e171333, #0e171333 60%, hsl(var(--background))), linear-gradient(90deg, transparent, #0d171477 35%, #0d171477 65%, transparent); }
+.atlas-hero .atlas-intro { width: min(760px, calc(100% - 36px)); padding: 90px 0 80px; text-shadow: 0 2px 18px #0009; }
+.atlas-hero .intro-description { color: #e7dfcf; }
+@media (max-width: 600px) {
+  .atlas-hero { min-height: 580px; }
+  .atlas-hero .atlas-intro { padding: 60px 0; }
+  .atlas-hero-shade { background: linear-gradient(180deg, #0e171366, #0e171388 65%, hsl(var(--background))); }
+}

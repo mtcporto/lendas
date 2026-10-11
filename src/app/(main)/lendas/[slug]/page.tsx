@@ -51,7 +51,7 @@ export default async function MythPage({ params }: MythPageProps) {
               priority
               sizes="(max-width: 900px) 100vw, 40vw"
               data-ai-hint={myth.imageAiHint}
-              className="object-contain"
+              className="object-contain object-top"
             />
           </div>
         </div>
@@ -60,6 +60,8 @@ export default async function MythPage({ params }: MythPageProps) {
           <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl text-primary mb-4 text-center md:text-left">
             {myth.name}
           </h1>
+
+          {myth.subtitle && <p className="text-xl italic text-primary mb-6">{myth.subtitle}</p>}
 
           <div className="mb-6 flex flex-wrap justify-center md:justify-start items-center gap-x-4 gap-y-2 text-sm">
             <Badge variant="secondary" className="flex items-center gap-1 py-1 px-3">
@@ -71,9 +73,9 @@ export default async function MythPage({ params }: MythPageProps) {
           </div>
 
           <div className="prose prose-lg max-w-none text-foreground/90 leading-relaxed mb-8">
-              <p className="text-lg whitespace-pre-line">
-                {myth.description}
-              </p>
+              {myth.description.split('\n\n').map((paragraph, index) => (
+                <p key={index} className="text-lg mb-5">{paragraph}</p>
+              ))}
           </div>
 
           <section className="mt-8">
@@ -104,6 +106,63 @@ export default async function MythPage({ params }: MythPageProps) {
               ))}
             </div>
           </section>
+
+          {myth.nomePopular && (
+            <dl className="mt-8 border-t border-border pt-5 space-y-2">
+              <div><dt className="inline font-semibold">Nome: </dt><dd className="inline">{myth.name}</dd></div>
+              <div><dt className="inline font-semibold">Nome popular associado: </dt><dd className="inline">{myth.nomePopular}</dd></div>
+              {myth.origemResumo && <div><dt className="inline font-semibold">Origem: </dt><dd className="inline">{myth.origemResumo}</dd></div>}
+            </dl>
+          )}
+
+          {myth.personagensTradicao && (
+            <section className="mt-8">
+              <h2 className="text-2xl font-headline mb-3">Personagens da tradição registrada</h2>
+              <p className="text-foreground/80">{myth.personagensTradicao}</p>
+            </section>
+          )}
+
+          {myth.variantesRegionais && (
+            <section className="mt-8">
+              <h2 className="text-2xl font-headline mb-3">Nomes e variantes regionais</h2>
+              <p className="text-foreground/80">{myth.variantesRegionais}</p>
+            </section>
+          )}
+
+          {myth.origemResumo && !myth.nomePopular && (
+            <section className="mt-8">
+              <h2 className="text-2xl font-headline mb-3">{myth.origemResumoTitulo ?? 'Origem'}</h2>
+              <p className="text-foreground/80">{myth.origemResumo}</p>
+            </section>
+          )}
+
+          {myth.tradicoesRelacionadas && (
+            <section className="mt-8">
+              <h2 className="text-2xl font-headline mb-3">Tradições relacionadas</h2>
+              <p className="text-foreground/80">{myth.tradicoesRelacionadas}</p>
+            </section>
+          )}
+
+          {myth.nomesAssociados && (
+            <section className="mt-8">
+              <h2 className="text-2xl font-headline mb-3">Nomes associados</h2>
+              <p className="text-foreground/80">{myth.nomesAssociados}</p>
+            </section>
+          )}
+
+          {myth.tradicoesRegistradas && (
+            <section className="mt-8">
+              <h2 className="text-2xl font-headline mb-3">Tradições registradas</h2>
+              <p className="text-foreground/80">{myth.tradicoesRegistradas}</p>
+            </section>
+          )}
+
+          {myth.fonteHistorica && (
+            <section className="mt-8">
+              <h2 className="text-2xl font-headline mb-3">{myth.fonteHistoricaTitulo ?? 'Fonte histórica destacada no verbete'}</h2>
+              <p className="text-foreground/80">{myth.fonteHistorica}</p>
+            </section>
+          )}
 
           {myth.referencias && myth.referencias.length > 0 && (
             <section className="mt-8">
