@@ -1,13 +1,8 @@
-
 import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
   typescript: {
     ignoreBuildErrors: false,
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
   },
   images: {
     remotePatterns: [
@@ -22,7 +17,7 @@ const nextConfig: NextConfig = {
         hostname: 'www.multirio.rj.gov.br',
         port: '',
         pathname: '/images/**',
-      }
+      },
     ],
   },
 };
